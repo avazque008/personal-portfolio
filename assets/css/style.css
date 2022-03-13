@@ -1,0 +1,155 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Garamond, 'Times New Roman', sans-serif
+}
+
+/* STYLE FOR HEADER START*/
+header {
+    margin-bottom: 0;
+    margin: 5px 5px 0 5px;
+    padding: 20px 35px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-image: linear-gradient(to right,  rgb(22, 96, 132), rgb(23, 112, 149), 
+    rgb(28, 143, 186), rgb(31, 165, 214), rgb(28, 143, 186), rgb(23, 112, 149), rgb(22, 96, 132));
+}
+/*rgb(118, 200, 147), rgb(100, 191, 151)*/
+
+header nav {
+    margin: 6px 0;
+    width: 100%;
+}
+
+header nav ul {
+    flex-wrap: wrap;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+ header nav ul li {
+     padding: 5px;
+ }
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    font-size: 1.5vw;
+    font-weight: lighter;
+    text-shadow: 0 0 8px rgba(255, 255, 255, 0.5);
+}
+
+header nav ul li a:hover {
+    background-color: rgb(229, 229, 229);
+    border-radius: 35px;
+    color: black;
+    font-weight: normal;
+}
+/* STYLE FOR HEADER END*/
+
+/* STYLE FOR HERO START */
+
+.hero {
+    margin: 0 5px 0 5px;
+    background-image: url("../images/hero.jpg");
+    background-size: cover;
+    background-position: center;
+    min-height: 300px;
+    opacity: 0.9;
+}
+
+.title {
+    padding: 150px;
+    display: flex;
+    justify-content: center;
+}
+
+.title h1 {
+    padding: 15px;
+    text-align: center;
+    font-size: 45px;
+    color: white;
+    background-color: rgb(24, 120, 158);
+    border-radius: 15px;
+    font-weight: bold;
+}
+
+/* STYLE FOR HERO START */
+
+/* STYLE FOR ABOUT ME START */
+.intro {
+    margin: 0 5px 0 5px;
+}
+.sub-headers {
+    padding: 15px 0;
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
+    color: rgb(22, 96, 132);
+    font-weight: normal;
+    width: 100%;
+}
+.sub-headers h2 {
+    border-bottom: 2px solid rgb(22, 96, 132);
+}
+
+.intro p {
+    text-align: center;
+    line-height: 1.6;
+    font-size: 20px;
+    color: rgb(24, 128, 166);
+}
+/* STYLE FOR ABOUT ME END */
+
+/* STYLE FOR CONTACT ME START */
+
+.info {
+    padding: 40px 10px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    justify-items: center;
+    width: 100%;
+    color: rgb(24, 128, 166);
+}
+
+.info div {
+    padding: 10px 0;
+    line-height: 1.5;
+    justify-content: center;
+    text-align: center;
+    font-size: 25px;
+
+}
+.info a {
+    text-decoration: none;
+}
+
+.email {
+    flex: 0 33%;
+}
+
+.phone {
+    flex: 1 33%;
+}
+
+.github {
+    flex: 1 33%;
+}
+
+ .github p {
+    font-weight: bold;
+ }
+
+/* STYLE FOR CONTACT ME START */
+
+
+
