@@ -66,13 +66,15 @@ header nav ul li a:hover {
 }
 
 .title {
-    padding: 150px;
     display: flex;
+    padding: 150px 0;
     justify-content: center;
+    width: 60%;
+    margin: auto;
 }
 
 .title h1 {
-    padding: 15px;
+    padding: 20px;
     text-align: center;
     font-size: 45px;
     color: white;
@@ -83,40 +85,66 @@ header nav ul li a:hover {
 
 /* STYLE FOR HERO START */
 
-/* STYLE FOR ABOUT ME START */
-.intro {
-    margin: 0 5px 0 5px;
-}
-.sub-headers {
-    padding: 15px 0;
-    display: flex;
-    justify-content: center;
-    font-size: 25px;
+/* STYLE FOR SECTION-TITLES START8*/
+.section-titles {
+    display: inline;
+    padding: 20px;
+    text-align: center;
+    font-size: 30px;
     color: rgb(22, 96, 132);
     font-weight: normal;
-    width: 100%;
+    margin: 7px auto 7px auto;
+    width: 50%;
 }
-.sub-headers h2 {
+.section-titles h2 {
     border-bottom: 2px solid rgb(22, 96, 132);
+    width: 40%;
+    margin: auto;
 }
+/*STYLE FOR SECTION-TITLES END*/
 
+/* STYLE FOR ABOUT ME START */
 .intro p {
     text-align: center;
     line-height: 1.6;
     font-size: 20px;
     color: rgb(24, 128, 166);
+    width: 80%;
+    margin: 0 auto;
 }
 /* STYLE FOR ABOUT ME END */
+
+/* STYLE FOR MY WORK SECTION START*/
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-content: space-around;
+}
+
+
+.projects h3 {
+    text-align: center;
+    font-size: 25px;
+    padding-bottom: 10px;
+    color: rgb(24, 128, 166);
+}
+.projects img {
+    width: 550px;
+    border-radius: 15px;
+}
+
+/* STYLE FOR MY WORK SECTION END*/
 
 /* STYLE FOR CONTACT ME START */
 
 .info {
-    padding: 40px 10px;
+    padding: 0 10px;
+    padding-bottom: 10px;
     width: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    justify-items: center;
     width: 100%;
     color: rgb(24, 128, 166);
 }
@@ -124,13 +152,14 @@ header nav ul li a:hover {
 .info div {
     padding: 10px 0;
     line-height: 1.5;
+    font-size: 28px;
     justify-content: center;
     text-align: center;
-    font-size: 25px;
 
 }
 .info a {
     text-decoration: none;
+    color: rgb(24, 128, 166);
 }
 
 .email {
@@ -138,15 +167,16 @@ header nav ul li a:hover {
 }
 
 .phone {
-    flex: 1 33%;
+    flex: 1;
 }
 
 .github {
-    flex: 1 33%;
+    flex: 1;
 }
 
- .github p {
+.github p {
     font-weight: bold;
+    padding: 20px;
  }
 
 /* STYLE FOR CONTACT ME START */
