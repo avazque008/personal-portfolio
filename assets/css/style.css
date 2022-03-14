@@ -204,41 +204,69 @@ header nav ul li a:hover {
 /* STYLE FOR CONTACT ME START */
 
 /* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
-@media screen and (max-width: 980px) {
+@media screen and (max-width: 1200px) {
     header nav ul li a {
         font-size: 25px;
     }
+    .section-titles {
+        font-size: 24px;
+    }
+    .info div {
+        font-size: 22px;
+    }
 }
 
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 780px) {
     .projects img {
     width: 400px;
-    border-radius: 15px;
     height: 250px;
     }
-    
-}
-
-@media screen and (max-width: 480px) {
-    .projects img {
-    width: 200px;
-    border-radius: 15px;
-    height: 200px;
+    .info div {
+        font-size: 20px;
+    }
+    .section-titles {
+        font-size: 23px;
     }
 }
 
-@media screen and (max-width: 400px) {
-    .projects {
+@media screen and (max-width: 540px) {
+    header nav ul {
+        padding: 20px 0;
         flex-direction: column;
     }
-    .projects img {
-    width: 25px;
-    border-radius: 15px;
-    height: 25px;
+     header nav ul li {
+        margin: 10px 0;
     }
-    
+
+    .title h1 {
+        font-size: 35px;
+    }
+    .projects img {
+    width: 300px;
+    height: 200px;
+    }
+    .projects div h3 {
+        font-size: 18px;
+    }
+
+    .section-titles {
+        font-size: 18px;
+    }
+
+    .info div {
+        font-size: 18px;
+    }
+    .email{
+        flex: 1 100%;
+    }
+    .github{
+        flex: 1 100;
+    }
+
+    .github p {
+        font-size: 20px;
+    }
+    .phone {
+        flex: 1 100%;
+    }
 }
-
-
-
-
