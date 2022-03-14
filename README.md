@@ -11,3 +11,5 @@ A website that showcase my work as a full-web developer.
 * Include titled images of the developer's applications and when that application's image is hover over the image should be larger in  size than the others.
 ## Website
 https://avazque008.github.io/personal-portfolio/
+##
+![website](https://github.com/avazque008/personal-portfolio/blob/main/assets/images/website.gif)
