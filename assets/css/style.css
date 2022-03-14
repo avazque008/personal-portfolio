@@ -78,7 +78,7 @@ header nav ul li a:hover {
     text-align: center;
     font-size: 45px;
     color: white;
-    background-color: rgb(24, 120, 158);
+    background-color: rgb(22, 96, 132);
     border-radius: 15px;
     font-weight: bold;
 }
@@ -116,22 +116,33 @@ header nav ul li a:hover {
 
 /* STYLE FOR MY WORK SECTION START*/
 .projects {
+    margin-top: 15px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     justify-content: space-around;
 }
 
+.projects div {
+    padding: 20px;
+}
 
-.projects h3 {
+.projects div h3 {    
     text-align: center;
     font-size: 25px;
     padding-bottom: 10px;
     color: rgb(24, 128, 166);
 }
+
+
 .projects img {
-    width: 550px;
+    width: 600px;
     border-radius: 15px;
+    height: 350px;
+}
+
+.projects div:hover {
+    transform: scale(1.1);
 }
 
 /* STYLE FOR MY WORK SECTION END*/
