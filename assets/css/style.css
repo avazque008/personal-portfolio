@@ -1,47 +1,38 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    width: 100%;
 }
 
 body {
-    font-family: Garamond, 'Times New Roman', sans-serif
+    font-family: Garamond, 'Times New Roman', sans-serif;
 }
 
 /* STYLE FOR HEADER START*/
 header {
-    margin-bottom: 0;
-    margin: 5px 5px 0 5px;
-    padding: 20px 35px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
     background-image: linear-gradient(to right,  rgb(22, 96, 132), rgb(23, 112, 149), 
     rgb(28, 143, 186), rgb(31, 165, 214), rgb(28, 143, 186), rgb(23, 112, 149), rgb(22, 96, 132));
 }
-/*rgb(118, 200, 147), rgb(100, 191, 151)*/
 
-header nav {
-    margin: 6px 0;
-    width: 100%;
+header .container-fluid {
+    padding: 20px;
 }
 
-header nav ul {
-    flex-wrap: wrap;
+header .row {
+    margin: 0;
+    padding: 10px;
+}
+header nav ul li {
     list-style: none;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
+    text-align: center;
 }
- header nav ul li {
-     padding: 5px;
- }
 
 header nav ul li a {
+    text-align: center;
     color: white;
     text-decoration: none;
     padding: 10px 15px;
-    font-size: 1.5vw;
+    font-size: 20px;
     font-weight: lighter;
     text-shadow: 0 0 8px rgba(255, 255, 255, 0.5);
 }
@@ -52,12 +43,10 @@ header nav ul li a:hover {
     color: black;
     font-weight: normal;
 }
-/* STYLE FOR HEADER END*/
 
 /* STYLE FOR HERO START */
 
 .hero {
-    margin: 0 5px 0 5px;
     background-image: url("../images/hero.jpg");
     background-size: cover;
     background-position: center;
@@ -66,7 +55,6 @@ header nav ul li a:hover {
 }
 
 .title {
-    display: flex;
     padding: 150px 0;
     justify-content: center;
     width: 60%;
@@ -76,14 +64,13 @@ header nav ul li a:hover {
 .title h1 {
     padding: 20px;
     text-align: center;
-    font-size: 45px;
+    font-size: 35px;
     color: white;
     background-color: rgb(22, 96, 132);
     border-radius: 15px;
     font-weight: bold;
+    margin: 0;
 }
-
-/* STYLE FOR HERO START */
 
 /* STYLE FOR SECTION-TITLES START8*/
 .section-titles {
@@ -101,7 +88,7 @@ header nav ul li a:hover {
     width: 40%;
     margin: auto;
 }
-/*STYLE FOR SECTION-TITLES END*/
+
 
 /* STYLE FOR ABOUT ME START */
 .intro p {
@@ -112,7 +99,6 @@ header nav ul li a:hover {
     width: 80%;
     margin: 0 auto;
 }
-/* STYLE FOR ABOUT ME END */
 
 /* STYLE FOR MY WORK SECTION START*/
 .projects {
@@ -152,8 +138,6 @@ header nav ul li a:hover {
     padding: 0 10px;
     padding-bottom: 10px;
     width: 100%;
-    display: flex;
-    flex-wrap: wrap;
     justify-content: space-around;
     width: 100%;
     color: rgb(24, 128, 166);
@@ -172,25 +156,14 @@ header nav ul li a:hover {
     color: rgb(24, 128, 166);
 }
 
-.email {
-    flex: 0 33%;
-}
-
 .email h3 {
     font-weight: bold;
 }
 
 .phone {
-    flex: 1;
-}
-
-.phone {
     font-weight: bold;
 }
 
-.github {
-    flex: 1;
-}
 
 .github h3 {
     font-weight: bold;
@@ -199,74 +172,4 @@ header nav ul li a:hover {
 .github p {
     font-weight: bold;
     padding: 20px;
- }
-
-/* STYLE FOR CONTACT ME START */
-
-/* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
-@media screen and (max-width: 1200px) {
-    header nav ul li a {
-        font-size: 25px;
-    }
-    .section-titles {
-        font-size: 24px;
-    }
-    .info div {
-        font-size: 22px;
-    }
-}
-
-@media screen and (max-width: 780px) {
-    .projects img {
-    width: 400px;
-    height: 250px;
-    }
-    .info div {
-        font-size: 20px;
-    }
-    .section-titles {
-        font-size: 23px;
-    }
-}
-
-@media screen and (max-width: 540px) {
-    header nav ul {
-        padding: 20px 0;
-        flex-direction: column;
-    }
-     header nav ul li {
-        margin: 10px 0;
-    }
-
-    .title h1 {
-        font-size: 35px;
-    }
-    .projects img {
-    width: 300px;
-    height: 200px;
-    }
-    .projects div h3 {
-        font-size: 18px;
-    }
-
-    .section-titles {
-        font-size: 18px;
-    }
-
-    .info div {
-        font-size: 18px;
-    }
-    .email{
-        flex: 1 100%;
-    }
-    .github{
-        flex: 1 100;
-    }
-
-    .github p {
-        font-size: 20px;
-    }
-    .phone {
-        flex: 1 100%;
-    }
 }
