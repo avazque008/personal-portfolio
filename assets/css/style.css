@@ -1,11 +1,6 @@
-* {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-}
-
 body {
     font-family: Garamond, 'Times New Roman', sans-serif;
+    width: 100%;
 }
 
 /* STYLE FOR HEADER START*/
@@ -57,11 +52,11 @@ header nav ul li a:hover {
 .title {
     padding: 150px 0;
     justify-content: center;
-    width: 60%;
     margin: auto;
 }
 
 .title h1 {
+    width: 60%;
     padding: 20px;
     text-align: center;
     font-size: 35px;
@@ -103,51 +98,49 @@ header nav ul li a:hover {
 /* STYLE FOR MY WORK SECTION START*/
 .projects {
     margin-top: 15px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    justify-content: space-around;
+    align-items: center;
 }
 
 .projects div {
     padding: 20px;
+    align-items: center;
 }
 
-.projects div h3 {    
+.projects div h3 {
+    margin-top: none;
+    padding: 10px;    
     text-align: center;
     font-size: 25px;
-    padding-bottom: 10px;
+    margin-bottom: 15px;
     color: rgb(24, 128, 166);
 }
 
-
-.projects img {
-    width: 600px;
-    border-radius: 15px;
-    height: 350px;
+.projects div a {
+    display: flex;
+    justify-content: space-around;
+    text-decoration: none;
 }
 
-.projects div:hover {
+.projects img {
+    max-width: 100%;
+    max-height: 300px;
+}
+
+.projects img:hover {
     transform: scale(1.1);
 }
 
-/* STYLE FOR MY WORK SECTION END*/
 
 /* STYLE FOR CONTACT ME START */
 .info {
     padding: 0 10px;
     padding-bottom: 10px;
-    width: 100%;
-    justify-content: space-around;
-    width: 100%;
     color: rgb(24, 128, 166);
 }
 
 .info div {
     padding: 10px 0;
-    line-height: 1.5;
     font-size: 28px;
-    justify-content: center;
     text-align: center;
 
 }
@@ -156,20 +149,22 @@ header nav ul li a:hover {
     color: rgb(24, 128, 166);
 }
 
-.email h3 {
-    font-weight: bold;
-}
-
-.phone {
-    font-weight: bold;
-}
-
-
-.github h3 {
+.email h3, .phone h3 {
     font-weight: bold;
 }
 
 .github p {
     font-weight: bold;
-    padding: 20px;
+    padding: 20px 0;
+}
+
+@media screen and (max-width: 576px ) {
+    
+    .nav-about-me, .nav-my-work {
+        margin-bottom: 10px;
+    }
+
+    .nav-contact-me {
+        margin-top: 10px;
+    }    
 }
