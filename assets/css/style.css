@@ -71,17 +71,17 @@ header nav ul li a:hover {
 .section-titles {
     display: inline;
     padding: 20px;
-    text-align: center;
-    font-size: 30px;
-    color: rgb(22, 96, 132);
-    font-weight: normal;
-    margin: 7px auto 7px auto;
-    width: 50%;
+    margin: auto;
 }
+
 .section-titles h2 {
     border-bottom: 2px solid rgb(22, 96, 132);
+    color: rgb(22, 96, 132);
     width: 40%;
     margin: auto;
+    font-size: 30px;
+    font-weight: normal;
+    text-align: center;
 }
 
 
@@ -92,7 +92,7 @@ header nav ul li a:hover {
     font-size: 20px;
     color: rgb(24, 128, 166);
     width: 80%;
-    margin: 0 auto;
+    margin: 20px auto;
 }
 
 /* STYLE FOR MY WORK SECTION START*/
@@ -103,7 +103,6 @@ header nav ul li a:hover {
 
 .projects div {
     padding: 20px;
-    align-items: center;
 }
 
 .projects div h3 {
@@ -115,7 +114,16 @@ header nav ul li a:hover {
     color: rgb(24, 128, 166);
 }
 
+.run-buddy {
+    width: 80%;
+}
+
+.robot-gladiators {
+    width: 68%;
+}
+
 .projects div a {
+    margin: 0 auto;
     display: flex;
     justify-content: space-around;
     text-decoration: none;
@@ -128,6 +136,15 @@ header nav ul li a:hover {
 
 .projects img:hover {
     transform: scale(1.1);
+}
+
+.my-lifestyle {
+    width: 40%;
+}
+
+.my-lifestyle img {
+    max-width: 150%;
+    max-height: 450px;
 }
 
 
