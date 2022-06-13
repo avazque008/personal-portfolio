@@ -1,46 +1,33 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 body {
-    font-family: Garamond, 'Times New Roman', sans-serif
+    font-family: Garamond, 'Times New Roman', sans-serif;
+    width: 100%;
 }
 
 /* STYLE FOR HEADER START*/
 header {
-    margin-bottom: 0;
-    padding: 20px 35px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
     background-image: linear-gradient(to right,  rgb(22, 96, 132), rgb(23, 112, 149), 
     rgb(28, 143, 186), rgb(31, 165, 214), rgb(28, 143, 186), rgb(23, 112, 149), rgb(22, 96, 132));
 }
-/*rgb(118, 200, 147), rgb(100, 191, 151)*/
 
-header nav {
-    margin: 6px 0;
-    width: 100%;
+header .container-fluid {
+    padding: 20px;
 }
 
-header nav ul {
-    flex-wrap: wrap;
+header .row {
+    margin: 0;
+    padding: 10px;
+}
+header nav ul li {
     list-style: none;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
+    text-align: center;
 }
- header nav ul li {
-     padding: 5px;
- }
 
 header nav ul li a {
+    text-align: center;
     color: white;
     text-decoration: none;
     padding: 10px 15px;
-    font-size: 1.5vw;
+    font-size: 20px;
     font-weight: lighter;
     text-shadow: 0 0 8px rgba(255, 255, 255, 0.5);
 }
@@ -51,7 +38,6 @@ header nav ul li a:hover {
     color: black;
     font-weight: normal;
 }
-/* STYLE FOR HEADER END*/
 
 /* STYLE FOR HERO START */
 
@@ -64,41 +50,39 @@ header nav ul li a:hover {
 }
 
 .title {
-    padding: 150px;
-    display: flex;
+    padding: 150px 0;
     justify-content: center;
-    width: 80%;
     margin: auto;
 }
 
 .title h1 {
-    padding: 15px;
+    width: 60%;
+    padding: 20px;
     text-align: center;
-    font-size: 45px;
+    font-size: 35px;
     color: white;
-    background-color: rgb(24, 120, 158);
+    background-color: rgb(22, 96, 132);
     border-radius: 15px;
     font-weight: bold;
+    margin: 0;
 }
 
-/* STYLE FOR HERO END */
-
-/* STYLE FOR SECTION TITLES START */
-.section-title {
-    font-size: 25px;
-    color: rgb(22, 96, 132);
-    padding-bottom: 10px;
-    text-align: center;
-    margin: 10px auto 10px auto;
-    width: 50%;
-}
-.section-title h2 {
-    border-bottom: 3px solid rgb(22, 96, 132);
-    width: 50%;
+/* STYLE FOR SECTION-TITLES START8*/
+.section-titles {
+    display: inline;
+    padding: 20px;
     margin: auto;
 }
 
-/* STYLE FOR SECTION TITLES END*/
+.section-titles h2 {
+    border-bottom: 2px solid rgb(22, 96, 132);
+    color: rgb(22, 96, 132);
+    width: 40%;
+    margin: auto;
+    font-size: 30px;
+    font-weight: normal;
+    text-align: center;
+}
 
 /* STYLE FOR ABOUT ME START */
 .intro p {
@@ -107,28 +91,74 @@ header nav ul li a:hover {
     line-height: 1.6;
     font-size: 20px;
     color: rgb(24, 128, 166);
-    margin: 0 auto;
+    width: 80%;
+    margin: 20px auto;
 }
-/* STYLE FOR ABOUT ME END */
+
+/* STYLE FOR MY WORK SECTION START*/
+.projects {
+    margin-top: 15px;
+    align-items: center;
+}
+
+.projects div {
+    padding: 20px;
+}
+
+.projects div h3 {
+    margin-top: none;
+    padding: 10px;    
+    text-align: center;
+    font-size: 25px;
+    margin-bottom: 15px;
+    color: rgb(24, 128, 166);
+}
+
+.run-buddy {
+    width: 80%;
+}
+
+.robot-gladiators {
+    width: 68%;
+}
+
+.projects div a {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    text-decoration: none;
+}
+
+.projects img {
+    max-width: 100%;
+    max-height: 300px;
+}
+
+.projects img:hover {
+    transform: scale(1.1);
+}
+
+.my-lifestyle {
+    width: 40%;
+}
+
+.my-lifestyle img {
+    max-width: 150%;
+    max-height: 450px;
+}
+
 
 /* STYLE FOR CONTACT ME START */
 .info {
-    padding: 10px;
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    justify-items: center;
-    width: 100%;
+    padding: 0 10px;
+    padding-bottom: 10px;
     color: rgb(24, 128, 166);
 }
 
 .info div {
-    padding: 0 10px 10px 10px;
-    line-height: 1.5;
-    justify-content: center;
+    padding: 10px 0;
+    font-size: 28px;
     text-align: center;
-    font-size: 25px;
 
 }
 .info a {
@@ -136,24 +166,22 @@ header nav ul li a:hover {
     color: rgb(24, 128, 166);
 }
 
-.email {
-    flex: 0 33%;
-}
-
-.phone {
-    flex: 1;
-}
-
-.github {
-    flex: 1;
-}
-
- .github p {
+.email h3, .phone h3 {
     font-weight: bold;
-    padding-top: 20px;
- }
+}
 
-/* STYLE FOR CONTACT ME START */
+.github p {
+    font-weight: bold;
+    padding: 20px 0;
+}
 
+@media screen and (max-width: 576px ) {
+    
+    .nav-about-me, .nav-my-work {
+        margin-bottom: 10px;
+    }
 
-
+    .nav-contact-me {
+        margin-top: 10px;
+    }    
+}
